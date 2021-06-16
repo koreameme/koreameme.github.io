@@ -64,7 +64,13 @@ post_class: post-template
             <!-- Post Content -->
             <div class="article-post">
                 <!-- Toc if any -->
-                {% if page.toc %}
+
+                <div class="toc">
+                    <a href="#">&lt;맨 위로&gt;</a>
+                    {% include toc.html html=content %}
+                </div>
+
+                <!-- {% if page.toc %}
                     {% if page.beforetoc %}
                         <p><em>{{page.beforetoc}}</em></p>
                     {% endif %}
@@ -72,7 +78,7 @@ post_class: post-template
                         <h3 class="font-weight-bold">Summary</h3>
                         {% include toc.html html=content %}
                     </div>
-                {% endif %}
+                {% endif %} -->
                 <!-- End Toc -->
                 {{content}}
             </div>
