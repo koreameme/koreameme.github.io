@@ -67,12 +67,12 @@ toc_label: "목차"
             <!-- Post Content -->
 
             <article class="post-article">
-                <div class="toc">
-                  <a href="#">&lt;맨 위로&gt;</a>
-                  {% include toc.html html=content %}
-                </div>
                 {{ content }}
             </article>
+            <div class="toc">
+                <a href="#">&lt;맨 위로&gt;</a>
+                {% include toc.html html=content %}
+            </div>
 
             <!-- <div class="article-post"> -->
                 <!-- Toc if any -->
