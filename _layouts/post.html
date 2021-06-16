@@ -15,6 +15,12 @@ post_class: post-template
             {% include share.html %}
         </div>
 
+        <aside class="sidebar__right sticky" style="height: auto !important;">
+          <div class="toc">
+            {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
+          </div>
+        </aside>
+
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
 
@@ -69,11 +75,7 @@ post_class: post-template
                     {% include toc.html html=content %}
                 </div>
 
-                <aside class="sidebar__right sticky" style="height: auto !important;">
-                  <div class="toc">
-                    {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
-                  </div>
-                </aside>
+
 
                 {{ content }}
             </article>
