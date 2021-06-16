@@ -13,13 +13,13 @@ post_class: post-template
         <!-- Post Share -->
         <div class="col-md-2 pl-0">
             {% include share.html %}
-
-            <aside class="sidebar__right sticky" style="height: auto !important;">
-              <div class="toc">
-                {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
-              </div>
-            </aside>
         </div>
+
+        <aside class="sidebar__right sticky" style="height: auto !important;">
+          <div class="toc">
+            {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
+          </div>
+        </aside>
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
@@ -74,9 +74,6 @@ post_class: post-template
                     <a href="#">&lt;맨 위로&gt;</a>
                     {% include toc.html html=content %}
                 </div>
-
-
-
                 {{ content }}
             </article>
             <div class="toc">

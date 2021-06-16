@@ -909,8 +909,8 @@ refer from
 .sidebar__right {
     display: block;
     position: sticky;
-    top: 0;
-    right: 0;
+    top: 80;
+    right: 20;
     width: 200px;
     margin-right: -200px;
     /* padding-left: 1em; */
