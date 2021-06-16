@@ -900,7 +900,7 @@ iframe {
     transition: opacity .25s;
 }
 
-.rect {
+/* .rect {
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
     padding-top: 15px;
@@ -916,4 +916,4 @@ iframe {
 
 .rel hover {
      opacity: 1;    
-}
+} */
