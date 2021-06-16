@@ -77,7 +77,10 @@ toc_label: "목차"
                 <a href="#">&lt;맨 위로&gt;</a>
                 {% include toc.html html=content %}
             </div>
-
+            <div class="toc mt-4 mb-4 lead">
+                <h3 class="font-weight-bold">Summary</h3>
+                {% include toc.html html=content %}
+            </div>
             <!-- <div class="article-post"> -->
                 <!-- Toc if any -->
                 <!-- {% if page.toc %}
