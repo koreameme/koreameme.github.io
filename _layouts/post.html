@@ -13,13 +13,13 @@ post_class: post-template
         <!-- Post Share -->
         <div class="col-md-2 pl-0">
             {% include share.html %}
-        </div>
 
-        <aside class="sidebar__right sticky" style="height: auto !important;">
-          <div class="toc">
-            {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
-          </div>
-        </aside>
+            <aside class="sidebar__right sticky" style="height: auto !important;">
+              <div class="toc">
+                {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
+              </div>
+            </aside>
+        </div>
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
