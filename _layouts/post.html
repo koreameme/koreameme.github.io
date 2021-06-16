@@ -68,6 +68,13 @@ post_class: post-template
                     <a href="#">&lt;맨 위로&gt;</a>
                     {% include toc.html html=content %}
                 </div>
+
+                <aside class="sidebar__right sticky" style="height: auto !important;">
+                  <div class="toc">
+                    {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
+                  </div>
+                </aside>
+
                 {{ content }}
             </article>
             <div class="toc">
