@@ -65,29 +65,29 @@ toc_sticky: true
 
             <!-- Post Content -->
 
-            <article class="post-article">
+            <!-- <article class="post-article">
                 <aside class="sidebar__right sticky" style="height: auto !important;">             
                 {{ content }}
-            </article>
+            </article> -->
             <!-- <div class="toc">
                 <a href="#">&lt;맨 위로&gt;</a>
                 <h3>Summary</h3>
                 {% include toc.html html=content %}
             </div> -->
-            <!-- <div class="article-post"> -->
+            <div class="article-post">
                 <!-- Toc if any -->
-                <!-- {% if page.toc %}
+                {% if page.toc %}
                     {% if page.beforetoc %}
                         <p><em>{{page.beforetoc}}</em></p>
-                    {% endif %} -->
-                    <!-- <div class="toc mt-4 mb-4 lead">
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
                         <h3 class="font-weight-bold">Summary</h3>
                         {% include toc.html html=content %}
-                    </div> -->
-                <!-- {% endif %} -->
+                    </div>
+                {% endif %}
                 <!-- End Toc -->
-                <!-- {{content}}
-            </div> -->
+                {{content}}
+            </div>
 
             <!-- Rating -->
             {% if page.rating %}
