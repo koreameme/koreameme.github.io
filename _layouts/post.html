@@ -9,10 +9,13 @@ post_class: post-template
 ================================================== -->
 <div class="container">
     <div class="row">
-
+      <!-- <div class="toc">
+        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+      </div> -->
         <!-- Post Share -->
         <div class="col-md-2 pl-0">
             {% include share.html %}
+            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
         </div>
 
         <!-- Post -->
@@ -65,9 +68,6 @@ post_class: post-template
 
             <article class="post-article">
                 <aside class="sidebar__right sticky" style="height: auto !important;">
-                <div class="toc">
-                  {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
-                </div>
                   <!-- <div class="toc">
                     {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
                   </div> -->
