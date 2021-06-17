@@ -64,15 +64,16 @@ post_class: post-template
             <!-- Post Content -->
 
             <article class="post-article">
+                <aside class="sidebar__right sticky" style="height: auto !important;">
+
                 <div class="toc">
-                    <a href="#">&lt;맨 위로&gt;</a>
-                    {% include toc.html html=content %}
+                  <a href="#">&lt;맨 위로&gt;</a>
+                  {% include toc.html html=content %}
                 </div>
 
-                <aside class="sidebar__right sticky" style="height: auto !important;">
-                  <div class="toc">
+                  <!-- <div class="toc">
                     {% include toc.html html=content sanitize=true h_min=1 h_max=2 %}
-                  </div>
+                  </div> -->
                 </aside>
                 
                 {{ content }}
