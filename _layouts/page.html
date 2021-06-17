@@ -12,6 +12,13 @@ toc_sticky: true
 
     <!-- content -->
     <div class="article-post">
+        <!-- Toc if any -->
+        {% if page.toc %}
+            {% if page.beforetoc %}
+                <p><em>{{page.beforetoc}}</em></p>
+            {% endif %}
+        {% endif %}
+        <!-- End Toc -->
     {{content}}
     </div>
 
