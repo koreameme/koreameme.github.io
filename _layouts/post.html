@@ -10,16 +10,16 @@ post_class: post-template
 <div class="container">
     <div class="row">
 
-        <div class="toc">
-          <a href="#">&lt;맨 위로&gt;</a>
-          {% include toc.html html=content %}
-        </div>
-
         <!-- Post Share -->
         <div class="col-md-2 pl-0">
             {% include share.html %}
         </div>
 
+        <div class="toc">
+          <a href="#">&lt;맨 위로&gt;</a>
+          {% include toc.html html=content %}
+        </div>
+        
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
 
